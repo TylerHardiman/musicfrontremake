@@ -1,14 +1,16 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Link from 'next/link'
 
-export default function Home() {
-  return (
+
+
+
+function Home() {
     <div className={styles.container}>
       <Head>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#link">Music Library</a>
+  <a class="navbar-brand" href="http://127.0.0.1:8000/music/">Music Library</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,13 +20,34 @@ export default function Home() {
       <li class="nav-item active">
         <a class="nav-link" href="#link">Home <span class="sr-only">(current)</span></a>
       </li>
+
+
+
+
+
+
+
+
       <li class="nav-item">
         <a class="nav-link" href="#link">Music Table</a>
       </li>
+
+
+
+
+
+
+
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Music Resources
         </a>
+
+
+
+
+
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Spotify link?</a>
           <a class="dropdown-item" href="#">Music News link?</a>
@@ -46,10 +69,6 @@ export default function Home() {
          Music Library 
         </h1>
 
-        <p className={styles.description}>
-          Whats your jam?{' '}
-          <code className={styles.code}>Where the music lives!</code>
-        </p>
 
         <div className={styles.grid}>
           <a href="" className={styles.card}>
@@ -62,23 +81,6 @@ export default function Home() {
             <p>!!!</p>
           </a>
 
-          <a
-            href=""
-            className={styles.card}
-          >
-            <h2>!!! &rarr;</h2>
-            <p>!!!</p>
-          </a>
-
-          <a
-            href=""
-            className={styles.card}
-          >
-            <h2>!!! &rarr;</h2>
-            <p>
-              !!!
-            </p>
-          </a>
         </div>
       </main>
 <footer>
@@ -91,7 +93,6 @@ export default function Home() {
       </footer> 
         </div>
         
-  );
-       
+}
 
-  }
+  export default Home;
