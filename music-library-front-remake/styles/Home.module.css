@@ -1,16 +1,21 @@
 .container {
   padding: 0 2rem;
+  background-image: url(https://images.pexels.com/photos/114820/pexels-photo-114820.jpeg?cs=srgb&dl=pexels-mike-114820.jpg&fm=jpg);
+  opacity: 0.75;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
-  background-image: url(https://images.pexels.com/photos/5083212/pexels-photo-5083212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  
+  background-image: url(https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?cs=srgb&dl=pexels-snapwire-6966.jpg&fm=jpg);
+  background-size: cover;
+  background-position: center;
   margin: auto;
-  width: 981px;
-  height: 180px;
+  width: 1080px;
+  height: 700px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -21,13 +26,11 @@
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #000000;
-  justify-content: center;
   align-items: center;
 }
 
 .footer a {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
@@ -92,8 +95,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #1b1a1a;
+  border-color: #1b1a1a;
 }
 
 .card h2 {
@@ -108,7 +111,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
   .grid {
     width: 100%;
     flex-direction: column;
